@@ -1,0 +1,16 @@
+from random import randint
+
+def rolldice(sides):
+  diceroll = randint(1, sides)
+  print(f"You rolled a {diceroll}! ")
+
+sides = int(input("How many sides? "))
+
+while True:
+  print()
+  rolldice(sides)
+  m = input("Roll again? (yes or no) ").lower()
+  if m == 'yes':
+    continue
+  else:
+    break
